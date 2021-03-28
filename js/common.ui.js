@@ -70,6 +70,33 @@ $.fn.uxeTabs = function (options) {
 		});
 	});
 };
+
+//아코디언 메뉴
+$.fn.uxeAccordionMenu = function (options) {
+	var settings = $.extend({
+		'selector' : 'js-accordion',
+		'itemSelector' : '.section-info-item',
+		'itemClass': 'js-accordion-item',
+		'navigation' : '.btn-accordion',
+		'activeItemClass': 'active',
+		'clickedShowOnly': false
+	}, options);
+	return this.each(function(){
+		var $this = $(this);
+		var $nav = $(this).find(settings.navigation);
+		$this.addClass(settings.selector).find(settings.itemSelector).addClass(settings.itemClass);
+		$nav.each(function(){
+			$(this).click(function(e){
+				e.preventDefault();
+				if(settings.clickedShowOnly === true){
+					$(this).parents('.'+settings.itemClass).siblings().removeClass(settings.activeItemClass);
+				}
+				$(this).parents('.'+settings.itemClass).toggleClass(settings.activeItemClass);
+			});
+		});
+	});
+};
+
 var APTNL = (function() {
 		var callLayer = function() {
 			var btnLayer = document.querySelectorAll('[data-layer]');
@@ -127,6 +154,7 @@ var tollTipLayer = function() {
 	})
 };
 
+
 $(document).ready(function(){
 	$('.box-tab').uxeTabs({
 		'tabsContentSlector':'.tab-contents',
@@ -134,41 +162,23 @@ $(document).ready(function(){
 		'autoFirstActivate': true,
 		'navClickScrollToTabsTop':true
 	});
-	$('.detail-open').on('click', function (e) {
-		$('.base-wrap').addClass('open');
+	$('.marker-structure-a').on('click', function (e) {
+		$('.box-structure-info').addClass('open');
 	});
-	$('.btn-close').on('click', function (e) {
-		$('.base-wrap').removeClass('open');
-	});
-	$('.btn-sh-folding').on('click', function (e) {
-		$(this).toggleClass('open');
-		$('.box-result').slideToggle('fast');
-		$('.box-sh').toggleClass('open');
-	});
-
-	$('.btn-tutorial-hide').on('click', function (e) {
-		$('.tutorial-popup').addClass('hide');
-	});
-
-	// 모바일 셀렉트 형태
-	var $tabs =  $('.box-choice .choice-item');
-	$('.m-select .option-open').click(function(){
-		//$tabs.toggleClass('m_view');
-		$(this).parent().parent().toggleClass('option-open');
-	});
-	$tabs.click(function(){
-		//$tabs.removeClass('m_view');
-		$('.m-select').removeClass('option-open');
-	});
-
-	$(".box-choice .choice-item .form_element-radio").on("click", function(e){
-		$(this).parent().parent().parent().parent().parent().parent().find( '.m-select .option-open' ).text( $(this).text() );
+	$('.box-structure-info .btn-layer-close').on('click', function (e) {
+		$('.box-structure-info').removeClass('open');
 	});
 
 	//  회사소개 메뉴
 	$('.btn-nav-open').on('click', function (e) {
 		$(this).toggleClass('close');
 		$('.company-header').toggleClass('nav-m-view');
+	});
+
+	// 아코디언
+	$('.box-detailed-index').uxeAccordionMenu({
+		'clickedShowOnly': true,
+		'itemSelector' : '.accordion-group'
 	});
 
 	window.onscroll = function() {myFunction()};
