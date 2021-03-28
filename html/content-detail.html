@@ -228,7 +228,7 @@
 						</ul>
 						<div class="tab-contents" id="structure1-a">
 							<div class="detailed-item">
-								<button type="button" class="btn-detailed">
+								<button type="button" class="btn-detailed" data-layer="structure-layer">
 									<span class="structure-name">상도초등학교</span>
 									<span class="structure-street">350m</span>
 								</button>
@@ -236,7 +236,7 @@
 						</div>
 						<div class="tab-contents" id="structure1-b">
 							<div class="detailed-item">
-								<button type="button" class="btn-detailed">
+								<button type="button" class="btn-detailed" data-layer="structure-layer">
 									<span class="structure-name">상도중학교</span>
 									<span class="structure-street">150m</span>
 								</button>
@@ -244,7 +244,7 @@
 						</div>
 						<div class="tab-contents" id="structure1-c">
 							<div class="detailed-item">
-								<button type="button" class="btn-detailed">
+								<button type="button" class="btn-detailed" data-layer="structure-layer">
 									<span class="structure-name">상도초등학교</span>
 									<span class="structure-street">430m</span>
 								</button>
@@ -259,19 +259,19 @@
 						</ul>
 						<div class="tab-contents" id="structure2-a">
 							<div class="detailed-item">
-								<button type="button" class="btn-detailed">
+								<button type="button" class="btn-detailed" data-layer="structure-layer">
 									<span class="structure-name">꿈터어린이집</span>
 									<span class="structure-street">250m</span>
 								</button>
 							</div>
 							<div class="detailed-item">
-								<button type="button" class="btn-detailed">
+								<button type="button" class="btn-detailed" data-layer="structure-layer">
 									<span class="structure-name">사랑어린이집</span>
 									<span class="structure-street">127m</span>
 								</button>
 							</div>
 							<div class="detailed-item">
-								<button type="button" class="btn-detailed">
+								<button type="button" class="btn-detailed" data-layer="structure-layer">
 									<span class="structure-name">좋은어린이집</span>
 									<span class="structure-street">420m</span>
 								</button>
@@ -279,13 +279,13 @@
 						</div>
 						<div class="tab-contents" id="structure2-b">
 							<div class="detailed-item">
-								<button type="button" class="btn-detailed">
+								<button type="button" class="btn-detailed" data-layer="structure-layer">
 									<span class="structure-name">꿈터유치원</span>
 									<span class="structure-street">250m</span>
 								</button>
 							</div>
 							<div class="detailed-item">
-								<button type="button" class="btn-detailed">
+								<button type="button" class="btn-detailed" data-layer="structure-layer">
 									<span class="structure-name">사랑유치원</span>
 									<span class="structure-street">127m</span>
 								</button>
@@ -293,19 +293,19 @@
 						</div>
 						<div class="tab-contents" id="structure2-c">
 							<div class="detailed-item">
-								<button type="button" class="btn-detailed">
+								<button type="button" class="btn-detailed" data-layer="structure-layer">
 									<span class="structure-name">꿈터학원</span>
 									<span class="structure-street">250m</span>
 								</button>
 							</div>
 							<div class="detailed-item">
-								<button type="button" class="btn-detailed">
+								<button type="button" class="btn-detailed" data-layer="structure-layer">
 									<span class="structure-name">사랑학원</span>
 									<span class="structure-street">127m</span>
 								</button>
 							</div>
 							<div class="detailed-item">
-								<button type="button" class="btn-detailed">
+								<button type="button" class="btn-detailed" data-layer="structure-layer">
 									<span class="structure-name">좋은학원</span>
 									<span class="structure-street">420m</span>
 								</button>
@@ -1818,10 +1818,55 @@
 				</div>
 			</div>
 		</div>
-		<button type="button" class="btn_layer-close"><i class="sp-com sp-layer-close"></i><span class="for-a11y">레이어팝업 닫기</span></button>
+		<button type="button" class="btn_layer-close"><span class="for-a11y">레이어팝업 닫기</span></button>
 	</div>
 </div>
 <!-- E : 로그인 layer -->
+<!-- S : 간물정보 layer -->
+<div id="structure-layer" class="layer_section">
+	<div class="layer_section-container structure-content">
+		<div class="layer-content">
+			<h1 class="structure-title">공립 상도초등학교</h1>
+			<div class="address-value"><i class="icon-position-b"></i>마포구 합정동 월드컵로 25</div>
+			<div class="table-data">
+				<table class="table-view-b">
+					<colgroup>
+						<col style="width:45%">
+						<col style="width:auto">
+					</colgroup>
+					<tbody>
+					<tr>
+						<th scope="row">학생수 / 학급당 학생수</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">교사수 / 교사당 학생수</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">학년별 학급수 / 학생수</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">교직원 현황(성비구성)</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">급식현황(급식비)</th>
+						<td></td>
+					</tr>
+					<tr>
+						<th scope="row">홈페이지 주소</th>
+						<td></td>
+					</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<button type="button" class="btn_layer-close"><span class="for-a11y">레이어팝업 닫기</span></button>
+	</div>
+</div>
+<!-- E : 간물정보 layer -->
 
 <!-- S : 도움말 layer -->
 <div id="info-layer" class="layer_section">
@@ -1927,7 +1972,7 @@
 			<!--<section class="help-content-a">
 			</section>-->
 		</div>
-		<button type="button" class="btn_layer-close"><i class="sp-com sp-layer-close"></i><span class="for-a11y">레이어팝업 닫기</span></button>
+		<button type="button" class="btn_layer-close"><span class="for-a11y">레이어팝업 닫기</span></button>
 	</div>
 	<script>
 		var swiper = new Swiper('.swiper-container', {
