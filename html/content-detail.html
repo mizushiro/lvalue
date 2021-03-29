@@ -105,14 +105,6 @@
 <!-- S : top area -->
 <div class="top-filter">
 	<div class="filter-item">
-		<p class="filter-title"><span class="filter-type">S</span>교육환경</p>
-		<div class="filter-select">
-			<select name="" class="select-a">
-				<option value="">선택</option>
-			</select>
-		</div>
-	</div>
-	<div class="filter-item">
 		<p class="filter-title"><span class="filter-type">T</span>교통환경</p>
 		<div class="filter-select">
 			<select name="" class="select-a">
@@ -121,7 +113,7 @@
 		</div>
 	</div>
 	<div class="filter-item">
-		<p class="filter-title"><span class="filter-type">N</span>자연공공</p>
+		<p class="filter-title"><span class="filter-type">E</span>교육환경</p>
 		<div class="filter-select">
 			<select name="" class="select-a">
 				<option value="">선택</option>
@@ -137,7 +129,7 @@
 		</div>
 	</div>
 	<div class="filter-item">
-		<p class="filter-title"><span class="filter-type">W</span>경제환경</p>
+		<p class="filter-title"><span class="filter-type">N</span>자연공공</p>
 		<div class="filter-select">
 			<select name="" class="select-a">
 				<option value="">선택</option>
@@ -145,7 +137,7 @@
 		</div>
 	</div>
 	<div class="filter-item">
-		<p class="filter-title"><span class="filter-type">B</span>주택환경</p>
+		<p class="filter-title"><span class="filter-type">U</span>도시분석</p>
 		<div class="filter-select">
 			<select name="" class="select-a">
 				<option value="">선택</option>
@@ -153,15 +145,7 @@
 		</div>
 	</div>
 	<div class="filter-item">
-		<p class="filter-title"><span class="filter-type">R</span>지역특성</p>
-		<div class="filter-select">
-			<select name="" class="select-a">
-				<option value="">선택</option>
-			</select>
-		</div>
-	</div>
-	<div class="filter-item">
-		<p class="filter-title"><span class="filter-type">U</span>이용계획</p>
+		<p class="filter-title"><span class="filter-type">C</span>주택(토지)환경</p>
 		<div class="filter-select">
 			<select name="" class="select-a">
 				<option value="">선택</option>
@@ -211,9 +195,78 @@
 			<button type="button" class="btn-type-a">전문가용</button>
 		</div>
 		<div class="box-detailed-index">
+			<!-- S : 교통환경 -->
 			<div class="accordion-group active">
 				<div class="accordion-title">
-					<h4 class="title-d">S. 교육환경<button type="button" class="btn-help slide-1" data-layer="info-layer"></button></h4>
+					<h4 class="title-d">T. 교통환경<button type="button" class="btn-help slide-1" data-layer="info-layer"></button></h4>
+					<button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
+				</div>
+				<div class="score-bar">
+					<div class="score-bar-value" style="width:67%"><span class="score-value"><span class="score-point">67</span>%</span></div>
+				</div>
+				<div class="detailed-index">
+					<div class="box-tab">
+						<ul class="list-tab">
+							<li class="list-item-tab"><button type="button" class="list-item-btn" name="#structure3-a">지하철(2)</button></li>
+							<li class="list-item-tab"><button type="button" class="list-item-btn" name="#structure3-b">버스정류장(3)</button></li>
+							<li class="list-item-tab"><button type="button" class="list-item-btn" name="#structure3-c">IC(2)</button></li>
+						</ul>
+						<div class="tab-contents" id="structure3-a">
+							<div class="detailed-item">
+								<div class="detailed-info">
+									<span class="structure-name">상도역</span>
+									<span class="structure-street">250m</span>
+								</div>
+							</div>
+							<div class="detailed-item">
+								<div class="detailed-info">
+									<span class="structure-name">숭실대역</span>
+									<span class="structure-street">127m</span>
+								</div>
+							</div>
+						</div>
+						<div class="tab-contents" id="structure3-b">
+							<div class="detailed-item">
+								<div class="detailed-info">
+									<span class="structure-name">상도주민센터(3)</span>
+									<span class="structure-street">102m</span>
+								</div>
+							</div>
+							<div class="detailed-item">
+								<div class="detailed-info">
+									<span class="structure-name">상도역(2)</span>
+									<span class="structure-street">235m</span>
+								</div>
+							</div>
+							<div class="detailed-item">
+								<div class="detailed-info">
+									<span class="structure-name">밤골(3)</span>
+									<span class="structure-street">315m</span>
+								</div>
+							</div>
+						</div>
+						<div class="tab-contents" id="structure3-c">
+							<div class="detailed-item">
+								<div class="detailed-info">
+									<span class="structure-name">동작대교남단IC</span>
+									<span class="structure-street">1502m</span>
+								</div>
+							</div>
+							<div class="detailed-item">
+								<div class="detailed-info">
+									<span class="structure-name">여의상류IC</span>
+									<span class="structure-street">1215m</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- E : 교통환경 -->
+			<!-- S : 교육환경 -->
+			<div class="accordion-group">
+				<div class="accordion-title">
+					<h4 class="title-d">E. 교육환경<button type="button" class="btn-help slide-2" data-layer="info-layer"></button></h4>
 					<button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
 				</div>
 				<div class="score-bar">
@@ -314,72 +367,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="accordion-group">
-				<div class="accordion-title">
-					<h4 class="title-d">T. 교통환경<button type="button" class="btn-help slide-2" data-layer="info-layer"></button></h4>
-					<button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
-				</div>
-				<div class="score-bar">
-					<div class="score-bar-value" style="width:67%"><span class="score-value"><span class="score-point">67</span>%</span></div>
-				</div>
-				<div class="detailed-index">
-					<div class="box-tab">
-						<ul class="list-tab">
-							<li class="list-item-tab"><button type="button" class="list-item-btn" name="#structure3-a">지하철(2)</button></li>
-							<li class="list-item-tab"><button type="button" class="list-item-btn" name="#structure3-b">버스정류장(3)</button></li>
-							<li class="list-item-tab"><button type="button" class="list-item-btn" name="#structure3-c">IC(2)</button></li>
-						</ul>
-						<div class="tab-contents" id="structure3-a">
-							<div class="detailed-item">
-								<div class="detailed-info">
-									<span class="structure-name">상도역</span>
-									<span class="structure-street">250m</span>
-								</div>
-							</div>
-							<div class="detailed-item">
-								<div class="detailed-info">
-									<span class="structure-name">숭실대역</span>
-									<span class="structure-street">127m</span>
-								</div>
-							</div>
-						</div>
-						<div class="tab-contents" id="structure3-b">
-							<div class="detailed-item">
-								<div class="detailed-info">
-									<span class="structure-name">상도주민센터(3)</span>
-									<span class="structure-street">102m</span>
-								</div>
-							</div>
-							<div class="detailed-item">
-								<div class="detailed-info">
-									<span class="structure-name">상도역(2)</span>
-									<span class="structure-street">235m</span>
-								</div>
-							</div>
-							<div class="detailed-item">
-								<div class="detailed-info">
-									<span class="structure-name">밤골(3)</span>
-									<span class="structure-street">315m</span>
-								</div>
-							</div>
-						</div>
-						<div class="tab-contents" id="structure3-c">
-							<div class="detailed-item">
-								<div class="detailed-info">
-									<span class="structure-name">동작대교남단IC</span>
-									<span class="structure-street">1502m</span>
-								</div>
-							</div>
-							<div class="detailed-item">
-								<div class="detailed-info">
-									<span class="structure-name">여의상류IC</span>
-									<span class="structure-street">1215m</span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			<!-- E : 교육환경 -->
+			<!-- S : 자연공공 -->
 			<div class="accordion-group">
 				<div class="accordion-title">
 					<h4 class="title-d">N. 자연공공<button type="button" class="btn-help slide-3" data-layer="info-layer"></button></h4>
@@ -468,6 +457,8 @@
 					</div>
 				</div>
 			</div>
+			<!-- E : 자연공공 -->
+			<!-- S : 생활환경 -->
 			<div class="accordion-group">
 				<div class="accordion-title">
 					<h4 class="title-d">F. 생활환경<button type="button" class="btn-help slide-4" data-layer="info-layer"></button></h4>
@@ -605,74 +596,11 @@
 					</div>
 				</div>
 			</div>
+			<!-- E : 생활환경 -->
+			<!-- S : 도시분석 -->
 			<div class="accordion-group">
 				<div class="accordion-title">
-					<h4 class="title-d">W. 경제환경<button type="button" class="btn-help slide-5" data-layer="info-layer"></button></h4>
-					<button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
-				</div>
-				<div class="score-bar">
-					<div class="score-bar-value" style="width:67%"><span class="score-value"><span class="score-point">67</span>%</span></div>
-				</div>
-				<div class="detailed-index">
-				</div>
-			</div>
-			<div class="accordion-group">
-				<div class="accordion-title">
-					<h4 class="title-d">B. 주택환경<button type="button" class="btn-help slide-6" data-layer="info-layer"></button></h4>
-					<button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
-				</div>
-				<div class="score-bar">
-					<div class="score-bar-value" style="width:67%"><span class="score-value"><span class="score-point">67</span>%</span></div>
-				</div>
-				<div class="detailed-index">
-					<table class="table-view-a">
-						<colgroup>
-							<col style="width:30%">
-							<col style="width:auto">
-						</colgroup>
-						<tbody>
-						<tr>
-							<th scope="row">노후도</th>
-							<td>2004년 12월(18년차)</td>
-						</tr>
-						<tr>
-							<th scope="row">단지규모</th>
-							<td>1250세대</td>
-						</tr>
-						<tr>
-							<th scope="row">주차공간</th>
-							<td>지상280대/지하1500대</td>
-						</tr>
-						<tr>
-							<th scope="row">브랜드</th>
-							<td>현대</td>
-						</tr>
-						<tr>
-							<th scope="row">관리비</th>
-							<td>15만원</td>
-						</tr>
-						<tr>
-							<th scope="row">녹지율</th>
-							<td>10%</td>
-						</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<div class="accordion-group">
-				<div class="accordion-title">
-					<h4 class="title-d">R. 지역특성<button type="button" class="btn-help slide-7" data-layer="info-layer"></button></h4>
-					<button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
-				</div>
-				<div class="score-bar">
-					<div class="score-bar-value" style="width:67%"><span class="score-value"><span class="score-point">67</span>%</span></div>
-				</div>
-				<div class="detailed-index">
-				</div>
-			</div>
-			<div class="accordion-group">
-				<div class="accordion-title">
-					<h4 class="title-d">U. 이용계획<button type="button" class="btn-help slide-8" data-layer="info-layer"></button></h4>
+					<h4 class="title-d">U. 도시분석<button type="button" class="btn-help slide-5" data-layer="info-layer"></button></h4>
 					<button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
 				</div>
 				<div class="score-bar">
@@ -727,6 +655,52 @@
 					<p class="txt-decs-a">대공방어협조구역(포함), 상대보호구역(저촉), 교육환경보호구역(저촉), 교육환경보호구역(포함), 도시지역(포함), 도로(접함), 가축사육제한구역(포함), 공원(접함), 과밀억제권역(포함), 제1종일반주거지역(접함), 제3종일반주거지역(포함)</p>
 				</div>
 			</div>
+			<!-- E : 도시분석 -->
+			<!-- S : 주택(토지)환경 -->
+			<div class="accordion-group">
+				<div class="accordion-title">
+					<h4 class="title-d">C. 주택(토지)환경<button type="button" class="btn-help slide-6" data-layer="info-layer"></button></h4>
+					<button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
+				</div>
+				<div class="score-bar">
+					<div class="score-bar-value" style="width:67%"><span class="score-value"><span class="score-point">67</span>%</span></div>
+				</div>
+				<div class="detailed-index">
+					<table class="table-view-a">
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:auto">
+						</colgroup>
+						<tbody>
+						<tr>
+							<th scope="row">노후도</th>
+							<td>2004년 12월(18년차)</td>
+						</tr>
+						<tr>
+							<th scope="row">단지규모</th>
+							<td>1250세대</td>
+						</tr>
+						<tr>
+							<th scope="row">주차공간</th>
+							<td>지상280대/지하1500대</td>
+						</tr>
+						<tr>
+							<th scope="row">브랜드</th>
+							<td>현대</td>
+						</tr>
+						<tr>
+							<th scope="row">관리비</th>
+							<td>15만원</td>
+						</tr>
+						<tr>
+							<th scope="row">녹지율</th>
+							<td>10%</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<!-- E : 주택(토지)환경 -->
 		</div>
 	</div>
 	<button type="button" class="btn-layer-close"><span class="for-a11y">닫기</span></button>
@@ -752,7 +726,7 @@
 	</div>
 </div>
 <!-- E : 로그인 layer -->
-<!-- S : 간물정보 layer -->
+<!-- S : 건물정보 layer -->
 <div id="structure-layer" class="layer_section">
 	<div class="layer_section-container structure-content">
 		<div class="layer-content">
@@ -796,101 +770,121 @@
 		<button type="button" class="btn_layer-close"><span class="for-a11y">레이어팝업 닫기</span></button>
 	</div>
 </div>
-<!-- E : 간물정보 layer -->
+<!-- E : 건물정보 layer -->
 <!-- S : 도움말 layer -->
 <div id="info-layer" class="layer_section">
 	<div class="layer_section-container help-content">
 		<div class="layer-content">
 			<div class="swiper-container">
 				<div class="swiper-wrapper">
-					<!-- S : 교육환경 -->
-					<div class="swiper-slide">
-						<p class="help-title">교육환경</p>
-						<div class="box-scroll">
-							<div class="box-des">
-								<p class="des-type-a">교육환경 설명글</p>
-							</div>
-						</div>
-					</div>
-					<!-- E : 교육환경 -->
 					<!-- S : 교통환경 -->
 					<div class="swiper-slide">
 						<p class="help-title">교통환경</p>
 						<div class="box-scroll">
+							<p class="des-type-a">교통시설의 거리에 대한 접근성 및 밀집성을 바탕으로 분석하였습니다.</p>
 							<div class="box-des">
-								<p class="des-type-a">교통시설의 거리에 대한 접근성 및 밀집성을 바탕으로 분석하였습니다.</p>
 								<dl class="help-item">
 									<dt class="help-tit">데이터항목</dt>
-									<dd class="help-txt">지하철 / 버스 / 광역대중교통</dd>
+									<dd class="help-txt">지하철출구, 버스정류장, 노선수, 고속도로 및 전용도로 IC</dd>
 								</dl>
 								<dl class="help-item">
 									<dt class="help-tit">분석방법</dt>
-									<dd class="help-txt">네트워크분석 / 버퍼밀도분석</dd>
+									<dd class="help-txt">확률밀도함수에 의한 거리분석 / 버퍼밀도분석</dd>
 								</dl>
 							</div>
 						</div>
 					</div>
 					<!-- E : 교통환경 -->
-					<!-- S : 자연공공 -->
+					<!-- S : 교육환경 -->
 					<div class="swiper-slide">
-						<p class="help-title">자연공공</p>
+						<p class="help-title">교육환경</p>
 						<div class="box-scroll">
+							<p class="des-type-a">학구도에 의한 배정학교 거리에 대한 접근성 및 주변 학원의 규모등을 고려하여 분석하였습니다.</p>
 							<div class="box-des">
-								<p class="des-type-a">자연공공 설명글</p>
+								<dl class="help-item">
+									<dt class="help-tit">데이터항목</dt>
+									<dd class="help-txt">어린이집, 유치원, 초중고, 학원</dd>
+								</dl>
+								<dl class="help-item">
+									<dt class="help-tit">분석방법</dt>
+									<dd class="help-txt">확률밀도함수에 의한 거리분석 / 버퍼밀도분석</dd>
+								</dl>
 							</div>
 						</div>
 					</div>
-					<!-- E : 자연공공 -->
+					<!-- E : 교육환경 -->
 					<!-- S : 생활환경 -->
 					<div class="swiper-slide">
 						<p class="help-title">생활환경</p>
 						<div class="box-scroll">
+							<p class="des-type-a">병원, 백화점, 쇼핑몰, 마트, 프렌차이즈 등 규모 및 브랜드에 따른 분류를 통해 실질적인 생활 편리성을 고려하여 분석하였습니다.</p>
 							<div class="box-des">
-								<p class="des-type-a">생활환경 설명글</p>
+								<dl class="help-item">
+									<dt class="help-tit">데이터항목</dt>
+									<dd class="help-txt">종합병원, 일반명원, 약국, 백화점, 쇼핑몰, 마트, 편의점, 커피숍, 프렌차이즈</dd>
+								</dl>
+								<dl class="help-item">
+									<dt class="help-tit">분석방법</dt>
+									<dd class="help-txt">확률밀도함수에 의한 거리분석 / 버퍼밀도분석</dd>
+								</dl>
 							</div>
 						</div>
 					</div>
 					<!-- E : 생활환경 -->
-					<!-- S : 경제환경 -->
+					<!-- S : 자연공공 -->
 					<div class="swiper-slide">
-						<p class="help-title">경제환경</p>
+						<p class="help-title">자연공공</p>
 						<div class="box-scroll">
+							<p class="des-type-a">공원의 면적, 하천변 및 동산의 산책로, 산악 등산로의 접근성을 분석하고 공공도서관의 거리와 선호도(규모)를 고려하여 분석하였습니다.</p>
 							<div class="box-des">
-								<p class="des-type-a">경제환경 설명글</p>
+								<dl class="help-item">
+									<dt class="help-tit">데이터항목</dt>
+									<dd class="help-txt">공원, 산책로, 등산로, 공공도서관</dd>
+								</dl>
+								<dl class="help-item">
+									<dt class="help-tit">분석방법</dt>
+									<dd class="help-txt">확률밀도함수에 의한 거리분석 / 버퍼밀도분석</dd>
+								</dl>
 							</div>
 						</div>
 					</div>
-					<!-- E : 경제환경 -->
-					<!-- S : 주택환경 -->
+					<!-- E : 자연공공 -->
+					<!-- S : 도시분석 -->
 					<div class="swiper-slide">
-						<p class="help-title">주택환경</p>
+						<p class="help-title">도시분석</p>
 						<div class="box-scroll">
+							<p class="des-type-a">산업종사자, 경제활동 건물, 도시개발밀도 등을 고려하여 경제지수 및 도시화지수를 산출하고 기피시설을 통해 클린지수를 분석하였습니다.</p>
 							<div class="box-des">
-								<p class="des-type-a">주택환경 설명글</p>
+								<dl class="help-item">
+									<dt class="help-tit">데이터항목</dt>
+									<dd class="help-txt">산업종사자, 용도별건축물정보, 기피시설(단란주점, 유흥시설, 성범죄자, 숙박업소 등)</dd>
+								</dl>
+								<dl class="help-item">
+									<dt class="help-tit">분석방법</dt>
+									<dd class="help-txt">확률밀도함수에 의한 거리분석 / 버퍼밀도분석</dd>
+								</dl>
 							</div>
 						</div>
 					</div>
-					<!-- E : 주택환경 -->
-					<!-- S : 지역특성 -->
+					<!-- E : 도시분석 -->
+					<!-- S : 주택(토지)환경 -->
 					<div class="swiper-slide">
-						<p class="help-title">지역특성</p>
+						<p class="help-title">주택(토지)환경</p>
 						<div class="box-scroll">
+							<p class="des-type-a">수치지형도, 용도지역지구, 건축물 정보 등 토지 및 주택의 선호도를 고려하여 분석하였습니다.</p>
 							<div class="box-des">
-								<p class="des-type-a">지역특성 설명글</p>
+								<dl class="help-item">
+									<dt class="help-tit">데이터항목</dt>
+									<dd class="help-txt">수치지형도, 도시계획전산파일, 건축물정보</dd>
+								</dl>
+								<dl class="help-item">
+									<dt class="help-tit">분석방법</dt>
+									<dd class="help-txt">TIN보정, SLOPE분석</dd>
+								</dl>
 							</div>
 						</div>
 					</div>
-					<!-- E : 지역특성 -->
-					<!-- S : 이용계획 -->
-					<div class="swiper-slide">
-						<p class="help-title">이용계획</p>
-						<div class="box-scroll">
-							<div class="box-des">
-								<p class="des-type-a">이용계획 설명글</p>
-							</div>
-						</div>
-					</div>
-					<!-- E : 이용계획 -->
+					<!-- E : 주택(토지)환경 -->
 				</div>
 				<!-- Add Pagination -->
 				<div class="swiper-pagination"></div>
@@ -951,6 +945,55 @@
 	</script>
 </div>
 <!-- E : 도움말 layer -->
+<!-- S : 비교분석 -->
+<div class="compare-analysis" style="display:none">
+	<div class="compare-analysis-box">
+		<header class="compare-header">
+			<div class="header-col">
+				<h1 class="compare-title">부동산가치비교 시스템</h1>
+				<div class="vs-area">
+					<div class="vs-item">
+						<span class="number">01</span>
+						<span class="vs-name">상도더샵 아파트</span>
+					</div>
+					<div class="txt-vs">vs</div>
+					<div class="vs-item">
+						<span class="number">02</span>
+						<span class="vs-name">상도래미안 아파트</span>
+					</div>
+				</div>
+			</div>
+			<div class="header-col">
+				<button type="button" class="btn-compare-a"><i class="icon-down"></i>PDF다운</button>
+				<button type="button" class="btn-compare-a"><i class="icon-print"></i>인쇄</button>
+			</div>
+		</header>
+		<section class="compare-analysis-content">
+			<div class="box-tab">
+				<ul class="list-tab">
+					<li class="list-item-tab"><button type="button" class="list-item-btn" name="#compare-1">기본정보</button></li>
+					<li class="list-item-tab"><button type="button" class="list-item-btn" name="#compare-2">실거래가, 공시지가</button></li>
+					<li class="list-item-tab"><button type="button" class="list-item-btn" name="#compare-3">T.교통환경</button></li>
+					<li class="list-item-tab"><button type="button" class="list-item-btn" name="#compare-4">E.교육환경</button></li>
+					<li class="list-item-tab"><button type="button" class="list-item-btn" name="#compare-5">F.생활환경</button></li>
+					<li class="list-item-tab"><button type="button" class="list-item-btn" name="#compare-6">N.자연공공</button></li>
+					<li class="list-item-tab"><button type="button" class="list-item-btn" name="#compare-7">U.도시분석</button></li>
+					<li class="list-item-tab"><button type="button" class="list-item-btn" name="#compare-8">C.주택(토지)환경</button></li>
+				</ul>
+				<div class="tab-contents" id="compare-1">
+
+				</div>
+				<div class="tab-contents" id="compare-2">
+
+				</div>
+				<div class="tab-contents" id="compare-3">
+
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+<!-- E : 비교분석 -->
 
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=udj14zm9sv"></script>
 <script type="text/javascript" src="/js/custom/chart/Chart.bundle.js"></script>

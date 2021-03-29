@@ -180,18 +180,6 @@ $(document).ready(function(){
 		'clickedShowOnly': true,
 		'itemSelector' : '.accordion-group'
 	});
-
-	window.onscroll = function() {myFunction()};
-	var header = document.getElementById("companyHeader");
-	var sticky = header.offsetTop;
-	function myFunction() {
-		if (window.pageYOffset > sticky) {
-			header.classList.add("sticky");
-		} else {
-			header.classList.remove("sticky");
-		}
-	}
-
 	// 슬라이더
 	$( "#slider-a" ).slider({
 		range: "min",

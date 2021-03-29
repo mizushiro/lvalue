@@ -779,4 +779,4 @@ A.prototype.createChart = function (){
 
 }
 
-const aptn = new A();
+const lvalue = new A();
