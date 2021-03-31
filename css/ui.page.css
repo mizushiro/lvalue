@@ -343,7 +343,7 @@ html.scroll_off {overflow:hidden}
 .box-chart .structure-score {background-color:#f6f6f6;height:40px;display:flex;justify-content:center;align-items:center}
 .box-chart .structure-score .structure-title {font-size:16px;color:#4e167c;margin-right:12px;letter-spacing:0;padding-top:4px}
 .box-chart .structure-score .value {color:#7809d4;font-size:24px;font-weight:600}
-.scroll-area {height:calc(100% - 70px);overflow-y:auto;overflow-x:hidden;padding:0 20px}
+.scroll-area {height:calc(100% - 70px);overflow-y:auto;overflow-x:hidden;padding:0 20px 20px}
 .scroll-area::-webkit-scrollbar {width:6px}
 .scroll-area::-webkit-scrollbar-track {background-color:transparent}
 .scroll-area::-webkit-scrollbar-thumb {border-radius:30px;background-color:rgba(0,0,0,.1);border:none}
@@ -371,6 +371,14 @@ html.scroll_off {overflow:hidden}
 .accordion-group.active .detailed-index {display:block}
 .detailed-index .title-e {margin-top:12px}
 .detailed-index .title-e + .txt-decs-a {margin-top:8px;padding-left:10px}
+.box-structure-info .box-chart  + .box-chart {margin-top:16px}
+.box-structure-info .size-choice {display:flex;align-items:center;height:32px;margin:32px 0 16px}
+.box-structure-info .size-choice .size-title {font-size:14px;font-weight:500;color:#4e167c;width:60px}
+.box-structure-info .size-choice .size-group {display:flex;width:calc(100% - 60px)}
+.box-structure-info .size-choice .btn-size-choice {flex:1;display:flex;height:32px;align-items:center;justify-content:center;padding:0 12px;font-size:14px;color:#7d02e3;border:1px solid #7d02e3;border-radius:4px;font-weight:500}
+.box-structure-info .size-choice .btn-size-choice:hover {background-color:#f1edf9}
+.box-structure-info .size-choice .btn-size-choice.active {background-color:#7d02e3;color:#fff}
+.box-structure-info .size-choice .btn-size-choice ~ .btn-size-choice {margin-left:8px}
 
 /* btn */
 .btn-layer-close {width:32px;height:32px;background:url("/images/btn-close.png") no-repeat 50% 50%}
@@ -447,7 +455,7 @@ html.scroll_off {overflow:hidden}
 /* 비교분석 */
 .compare-analysis.open:before {opacity:1;z-index:100}
 .compare-analysis.open .compare-analysis-box {left:400px}
-.compare-analysis .compare-analysis-box {position:absolute;top:0;left:-100%;width:calc(100% - 400px);bottom:0;background-color:#fff;z-index:101;min-width:1220px;-webkit-transition:left .3s ease-out;transition:left .3s ease-out}
+.compare-analysis .compare-analysis-box {position:absolute;top:0;left:calc(-100% - 400px);width:calc(100% - 400px);bottom:0;background-color:#fff;z-index:101;min-width:1220px;-webkit-transition:left .3s ease-out;transition:left .3s ease-out}
 .compare-analysis .compare-analysis-box .btn-compare-close {position:absolute;top:20px;right:20px;width:40px;height:40px;background:url("/images/btn-close.png") no-repeat 50% 50%}
 .compare-analysis:before {content:'';position:fixed;left:0;top:0;width:100%;bottom:0;background-color:rgba(0,0,0,.7);opacity:0;z-index:-1;-webkit-transition:opacity .2s ease-out;transition:opacity .2s ease-out}
 .compare-analysis-box .compare-header {height:80px;background-color:#f7f7f7;border-bottom:1px solid #c3c3c3;display:flex;justify-content:space-between;align-items:center;padding-right:72px}
@@ -489,13 +497,26 @@ html.scroll_off {overflow:hidden}
 .analysis-item .title-f {margin:32px 0 16px}
 .analysis-item .table-view-b tbody th,
 .analysis-item .table-view-b tbody td {font-size:13px}
-.analysis-item .map-area-b {height:350px;border:1px solid #e2e2e2;border-radius:4px;overflow:hidden}
+.analysis-item .map-area-b {height:380px;border:1px solid #e2e2e2;border-radius:4px;overflow:hidden}
 .analysis-item .map-area-b ~ .box-tab-b {margin-top:24px}
+.analysis-item .content-a {margin-top:24px}
 
 .list-tab-b {display:flex;border-bottom:1px solid #c7c7c7;margin-bottom:12px}
 .list-tab-b .list-item-tab-b {flex:1}
 .list-tab-b .list-item-tab-b .list-item-btn-b {height:34px;width:100%;text-align:center;font-size:13px;color:#666;background-color:#fff}
 .list-tab-b .list-item-tab-b.is-selected .list-item-btn-b {position:relative;color:#7d02e3;font-weight:500}
 .list-tab-b .list-item-tab-b.is-selected .list-item-btn-b:before {content:'';position:absolute;left:0;right:0;bottom:-1px;height:2px;background-color:#7d02e3}
+
 .analysis-item .detailed-item .detailed-info,
 .analysis-item .detailed-item .btn-detailed {display:flex;justify-content:space-between;width:100%;height:28px;align-items:center}
+.analysis-item .chart-group .box-chart .chart-area {height:280px}
+.analysis-item .chart-group .box-chart ~ .box-chart {margin-top:24px}
+
+.graph-item-group {margin-top:24px}
+.graph-item {height:40px;border:1px solid #e2e2e2;border-radius:20px;background-color:#fff;overflow:hidden;display:flex;align-items:center}
+.graph-item .graph-title {width:100px;background-color:#f1edf9;color:#400075;height:100%;display:flex;align-items:center;justify-content:center;font-weight:500}
+.graph-item .graph-score {width:52px;color:#400075;font-size:12px;font-weight:200;padding-right:12px;text-align:right}
+.graph-item .graph-score .value {font-size:16px;font-weight:600}
+.graph-item .graph-bar {width:calc(100% - 152px);height:3px;background-color:#ededed}
+.graph-item .graph-bar .bar-data {height:3px;vertical-align:top;display:inline-block;background-color:#a35deb}
+.graph-item ~ .graph-item {margin-top:12px}

@@ -607,6 +607,35 @@
 					<div class="score-bar-value" style="width:67%"><span class="score-value"><span class="score-point">67</span>%</span></div>
 				</div>
 				<div class="detailed-index">
+					<div class="graph-item">
+						<div class="graph-title">경제지수</div>
+						<div class="graph-bar"><span class="bar-data" style="width:58%"></span></div>
+						<div class="graph-score"><span class="value">58</span>%</div>
+					</div>
+					<div class="graph-item">
+						<div class="graph-title">도시화지수</div>
+						<div class="graph-bar"><span class="bar-data" style="width:84%"></span></div>
+						<div class="graph-score"><span class="value">84</span>%</div>
+					</div>
+					<div class="graph-item">
+						<div class="graph-title">클린지수</div>
+						<div class="graph-bar"><span class="bar-data" style="width:79%"></span></div>
+						<div class="graph-score"><span class="value">79</span>%</div>
+					</div>
+				</div>
+			</div>
+			<!-- E : 도시분석 -->
+			<!-- S : 주택(토지)환경 -->
+			<div class="accordion-group">
+				<div class="accordion-title">
+					<h4 class="title-d">C. 주택(토지)환경<button type="button" class="btn-help slide-6" data-layer="info-layer"></button></h4>
+					<button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
+				</div>
+				<div class="score-bar">
+					<div class="score-bar-value" style="width:67%"><span class="score-value"><span class="score-point">67</span>%</span></div>
+				</div>
+				<div class="detailed-index">
+					<!-- S : 토지일 경우 -->
 					<table class="table-view-a">
 						<colgroup>
 							<col style="width:30%">
@@ -646,26 +675,15 @@
 							<td>고지</td>
 						</tr>
 						<tr>
-							<th scope="row">개발호재</th>
-							<td>광역도시철도역, IC개통</td>
+							<th scope="row">경사도</th>
+							<td>2.52도</td>
 						</tr>
 						</tbody>
 					</table>
 					<p class="title-e">토지이용계획</p>
 					<p class="txt-decs-a">대공방어협조구역(포함), 상대보호구역(저촉), 교육환경보호구역(저촉), 교육환경보호구역(포함), 도시지역(포함), 도로(접함), 가축사육제한구역(포함), 공원(접함), 과밀억제권역(포함), 제1종일반주거지역(접함), 제3종일반주거지역(포함)</p>
-				</div>
-			</div>
-			<!-- E : 도시분석 -->
-			<!-- S : 주택(토지)환경 -->
-			<div class="accordion-group">
-				<div class="accordion-title">
-					<h4 class="title-d">C. 주택(토지)환경<button type="button" class="btn-help slide-6" data-layer="info-layer"></button></h4>
-					<button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
-				</div>
-				<div class="score-bar">
-					<div class="score-bar-value" style="width:67%"><span class="score-value"><span class="score-point">67</span>%</span></div>
-				</div>
-				<div class="detailed-index">
+					<!-- E : 토지일 경우 -->
+					<!-- S : 아파트일 경우 -->
 					<table class="table-view-a">
 						<colgroup>
 							<col style="width:30%">
@@ -692,15 +710,63 @@
 							<th scope="row">관리비</th>
 							<td>15만원</td>
 						</tr>
+						</tbody>
+					</table>
+					<!-- E : 아파트일 경우 -->
+					<!-- S : 빌라일 경우 -->
+					<table class="table-view-a">
+						<colgroup>
+							<col style="width:30%">
+							<col style="width:auto">
+						</colgroup>
+						<tbody>
 						<tr>
-							<th scope="row">녹지율</th>
-							<td>10%</td>
+							<th scope="row">노후도</th>
+							<td>2004년 12월(18년차)</td>
+						</tr>
+						<tr>
+							<th scope="row">건폐율/용적률</th>
+							<td>50%/80%</td>
+						</tr>
+						<tr>
+							<th scope="row">경사도</th>
+							<td>2.52도</td>
+						</tr>
+						<tr>
+							<th scope="row">주차공간</th>
+							<td>유/무</td>
+						</tr>
+						<tr>
+							<th scope="row">엘리베이터</th>
+							<td>유/무</td>
 						</tr>
 						</tbody>
 					</table>
+					<!-- E : 빌라일 경우 -->
 				</div>
 			</div>
 			<!-- E : 주택(토지)환경 -->
+		</div>
+		<div class="size-choice">
+			<p class="size-title">면적(㎡)</p>
+			<div class="size-group">
+				<button type="button" class="btn-size-choice active">106</button>
+				<button type="button" class="btn-size-choice">121</button>
+				<button type="button" class="btn-size-choice">124</button>
+				<button type="button" class="btn-size-choice">164</button>
+			</div>
+		</div>
+		<div class="box-chart">
+			<div class="chart-area"><img src="/images/temp/@sample.png" alt=""></div>
+			<div class="structure-score">
+				<span class="structure-title">실거래가</span>
+			</div>
+		</div>
+		<div class="box-chart">
+			<div class="chart-area"><img src="/images/temp/@sample.png" alt=""></div>
+			<div class="structure-score">
+				<span class="structure-title">공시지가</span>
+			</div>
 		</div>
 	</div>
 	<button type="button" class="btn-layer-close"><span class="for-a11y">닫기</span></button>
@@ -1258,8 +1324,38 @@
 					<!-- S : 실거래가, 공시지가 -->
 					<div class="tab-contents" id="compare-2">
 						<div class="analysis-box">
-							<div class="analysis-item"></div>
-							<div class="analysis-item"></div>
+							<div class="analysis-item">
+								<div class="chart-group">
+									<div class="box-chart">
+										<div class="chart-area"><img src="/images/temp/@sample.png" alt=""></div>
+										<div class="structure-score">
+											<span class="structure-title">실거래가</span>
+										</div>
+									</div>
+									<div class="box-chart">
+										<div class="chart-area"><img src="/images/temp/@sample.png" alt=""></div>
+										<div class="structure-score">
+											<span class="structure-title">공시지가</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="analysis-item">
+								<div class="chart-group">
+									<div class="box-chart">
+										<div class="chart-area"><img src="/images/temp/@sample.png" alt=""></div>
+										<div class="structure-score">
+											<span class="structure-title">실거래가</span>
+										</div>
+									</div>
+									<div class="box-chart">
+										<div class="chart-area"><img src="/images/temp/@sample.png" alt=""></div>
+										<div class="structure-score">
+											<span class="structure-title">공시지가</span>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<!-- E : 실거래가, 공시지가 -->
@@ -1999,16 +2095,270 @@
 					<!-- S : 도시분석 -->
 					<div class="tab-contents" id="compare-7">
 						<div class="analysis-box">
-							<div class="analysis-item"></div>
-							<div class="analysis-item"></div>
+							<div class="analysis-item">
+								<div class="map-area-b">
+									지도영역
+								</div>
+								<div class="graph-item-group">
+									<div class="graph-item">
+										<div class="graph-title">경제지수</div>
+										<div class="graph-bar"><span class="bar-data" style="width:58%"></span></div>
+										<div class="graph-score"><span class="value">58</span>%</div>
+									</div>
+									<div class="graph-item">
+										<div class="graph-title">도시화지수</div>
+										<div class="graph-bar"><span class="bar-data" style="width:84%"></span></div>
+										<div class="graph-score"><span class="value">84</span>%</div>
+									</div>
+									<div class="graph-item">
+										<div class="graph-title">클린지수</div>
+										<div class="graph-bar"><span class="bar-data" style="width:79%"></span></div>
+										<div class="graph-score"><span class="value">79</span>%</div>
+									</div>
+								</div>
+							</div>
+							<div class="analysis-item">
+								<div class="map-area-b">
+									지도영역
+								</div>
+								<div class="graph-item-group">
+									<div class="graph-item">
+										<div class="graph-title">경제지수</div>
+										<div class="graph-bar"><span class="bar-data" style="width:58%"></span></div>
+										<div class="graph-score"><span class="value">58</span>%</div>
+									</div>
+									<div class="graph-item">
+										<div class="graph-title">도시화지수</div>
+										<div class="graph-bar"><span class="bar-data" style="width:84%"></span></div>
+										<div class="graph-score"><span class="value">84</span>%</div>
+									</div>
+									<div class="graph-item">
+										<div class="graph-title">클린지수</div>
+										<div class="graph-bar"><span class="bar-data" style="width:79%"></span></div>
+										<div class="graph-score"><span class="value">79</span>%</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<!-- E : 도시분석 -->
 					<!-- S : 주택(토지)환경 -->
 					<div class="tab-contents" id="compare-8">
 						<div class="analysis-box">
-							<div class="analysis-item"></div>
-							<div class="analysis-item"></div>
+							<div class="analysis-item">
+								<div class="map-area-b">
+									지도영역
+								</div>
+								<!-- S : 토지일 경우 -->
+								<div class="content-a">
+									<table class="table-view-b">
+										<colgroup>
+											<col style="width:100px">
+											<col>
+											<col style="width:100px">
+											<col>
+											<col style="width:100px">
+											<col>
+										</colgroup>
+										<tbody>
+										<tr>
+											<th scope="row">지번</th>
+											<td>412-10</td>
+											<th scope="row">지목</th>
+											<td>대</td>
+											<th scope="row">면적</th>
+											<td>1256㎡/381평</td>
+										</tr>
+										<tr>
+											<th scope="row">용도지역</th>
+											<td>제1종주거지역</td>
+											<th scope="row">건폐율/용적률</th>
+											<td>50%/80%</td>
+											<th scope="row">도로</th>
+											<td>중로한면</td>
+										</tr>
+										<tr>
+											<th scope="row">형상</th>
+											<td>세장형</td>
+											<th scope="row">지세</th>
+											<td>고지</td>
+											<th scope="row">경사도</th>
+											<td>2.52도</td>
+										</tr>
+										</tbody>
+									</table>
+									<p class="title-f">토지이용계획</p>
+									<p class="txt-decs-a">대공방어협조구역(포함), 상대보호구역(저촉), 교육환경보호구역(저촉), 교육환경보호구역(포함), 도시지역(포함), 도로(접함), 가축사육제한구역(포함), 공원(접함), 과밀억제권역(포함), 제1종일반주거지역(접함), 제3종일반주거지역(포함)</p>
+									<!-- E : 토지일 경우 -->
+									<!-- S : 아파트일 경우 -->
+									<table class="table-view-b">
+										<colgroup>
+											<col style="width:100px">
+											<col>
+											<col style="width:100px">
+											<col>
+											<col style="width:100px">
+											<col>
+										</colgroup>
+										<tbody>
+										<tr>
+											<th scope="row">노후도</th>
+											<td>2004년 12월(18년차)</td>
+											<th scope="row">단지규모</th>
+											<td>1250세대</td>
+											<th scope="row">주차공간</th>
+											<td>지상280대/지하1500대</td>
+										</tr>
+										<tr>
+											<th scope="row">브랜드</th>
+											<td>현대</td>
+											<th scope="row">관리비</th>
+											<td>15만원</td>
+											<th></th>
+											<td></td>
+										</tr>
+										</tbody>
+									</table>
+									<!-- E : 아파트일 경우 -->
+									<!-- S : 빌라일 경우 -->
+									<table class="table-view-b">
+										<colgroup>
+											<col style="width:100px">
+											<col>
+											<col style="width:100px">
+											<col>
+											<col style="width:100px">
+											<col>
+										</colgroup>
+										<tbody>
+										<tr>
+											<th scope="row">노후도</th>
+											<td>2004년 12월(18년차)</td>
+											<th scope="row">건폐율/용적률</th>
+											<td>50%/80%</td>
+											<th scope="row">경사도</th>
+											<td>2.52도</td>
+										</tr>
+										<tr>
+											<th scope="row">주차공간</th>
+											<td>유/무</td>
+											<th scope="row">엘리베이터</th>
+											<td>유/무</td>
+											<th></th>
+											<td></td>
+										</tr>
+										</tbody>
+									</table>
+									<!-- E : 빌라일 경우 -->
+								</div>
+							</div>
+							<div class="analysis-item">
+								<div class="map-area-b">
+									지도영역
+								</div>
+								<!-- S : 토지일 경우 -->
+								<div class="content-a">
+									<table class="table-view-b">
+										<colgroup>
+											<col style="width:100px">
+											<col>
+											<col style="width:100px">
+											<col>
+											<col style="width:100px">
+											<col>
+										</colgroup>
+										<tbody>
+										<tr>
+											<th scope="row">지번</th>
+											<td>412-10</td>
+											<th scope="row">지목</th>
+											<td>대</td>
+											<th scope="row">면적</th>
+											<td>1256㎡/381평</td>
+										</tr>
+										<tr>
+											<th scope="row">용도지역</th>
+											<td>제1종주거지역</td>
+											<th scope="row">건폐율/용적률</th>
+											<td>50%/80%</td>
+											<th scope="row">도로</th>
+											<td>중로한면</td>
+										</tr>
+										<tr>
+											<th scope="row">형상</th>
+											<td>세장형</td>
+											<th scope="row">지세</th>
+											<td>고지</td>
+											<th scope="row">경사도</th>
+											<td>2.52도</td>
+										</tr>
+										</tbody>
+									</table>
+									<p class="title-f">토지이용계획</p>
+									<p class="txt-decs-a">대공방어협조구역(포함), 상대보호구역(저촉), 교육환경보호구역(저촉), 교육환경보호구역(포함), 도시지역(포함), 도로(접함), 가축사육제한구역(포함), 공원(접함), 과밀억제권역(포함), 제1종일반주거지역(접함), 제3종일반주거지역(포함)</p>
+									<!-- E : 토지일 경우 -->
+									<!-- S : 아파트일 경우 -->
+									<table class="table-view-b">
+										<colgroup>
+											<col style="width:100px">
+											<col>
+											<col style="width:100px">
+											<col>
+											<col style="width:100px">
+											<col>
+										</colgroup>
+										<tbody>
+										<tr>
+											<th scope="row">노후도</th>
+											<td>2004년 12월(18년차)</td>
+											<th scope="row">단지규모</th>
+											<td>1250세대</td>
+											<th scope="row">주차공간</th>
+											<td>지상280대/지하1500대</td>
+										</tr>
+										<tr>
+											<th scope="row">브랜드</th>
+											<td>현대</td>
+											<th scope="row">관리비</th>
+											<td>15만원</td>
+											<th></th>
+											<td></td>
+										</tr>
+										</tbody>
+									</table>
+									<!-- E : 아파트일 경우 -->
+									<!-- S : 빌라일 경우 -->
+									<table class="table-view-b">
+										<colgroup>
+											<col style="width:100px">
+											<col>
+											<col style="width:100px">
+											<col>
+											<col style="width:100px">
+											<col>
+										</colgroup>
+										<tbody>
+										<tr>
+											<th scope="row">노후도</th>
+											<td>2004년 12월(18년차)</td>
+											<th scope="row">건폐율/용적률</th>
+											<td>50%/80%</td>
+											<th scope="row">경사도</th>
+											<td>2.52도</td>
+										</tr>
+										<tr>
+											<th scope="row">주차공간</th>
+											<td>유/무</td>
+											<th scope="row">엘리베이터</th>
+											<td>유/무</td>
+											<th></th>
+											<td></td>
+										</tr>
+										</tbody>
+									</table>
+									<!-- E : 빌라일 경우 -->
+								</div>
+							</div>
 						</div>
 					</div>
 					<!-- E : 주택(토지)환경 -->
