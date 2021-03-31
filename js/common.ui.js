@@ -162,11 +162,27 @@ $(document).ready(function(){
 		'autoFirstActivate': true,
 		'navClickScrollToTabsTop':true
 	});
+	$('.box-tab-b').uxeTabs({
+		'menuSelector': '.list-item-tab-b',
+		'menuBtnSelector' : '.list-item-btn-b',
+		'tabsContentSlector':'.tab-contents-b',
+		'useSubTarget': true,
+		'autoFirstActivate': true,
+		'navClickScrollToTabsTop':true
+	});
 	$('.marker-structure-a').on('click', function (e) {
 		$('.box-structure-info').addClass('open');
 	});
 	$('.box-structure-info .btn-layer-close').on('click', function (e) {
 		$('.box-structure-info').removeClass('open');
+	});
+	// 비교분석
+	$('.btn-compare').on('click', function (e) {
+		$('.compare-analysis').addClass('open');
+		$('.layer_section').removeClass('showing');
+	});
+	$('.btn-compare-close').on('click', function (e) {
+		$('.compare-analysis').removeClass('open');
 	});
 
 	//  회사소개 메뉴
