@@ -452,7 +452,19 @@ html.scroll_off {overflow:hidden}
 .structure-content .address-value i {margin-right:8px}
 .structure-content .table-data {padding:0 20px;margin-top:20px}
 
-/* 비교분석 */
+/* 가중치 설정 */
+.weight-title {text-align:center;font-size:24px;height:68px;display:flex;justify-content:center;align-items:center;border-bottom:1px solid #e2e2e2;color:#31196a}
+.layer_section-container.weight-content .btn_layer-close {background:url("/images/btn-close.png") no-repeat 50% 50%;right:18px;top:28px}
+.weight-list {padding:32px 40px}
+.weight-item {display:flex;align-items:center}
+.weight-item ~ .weight-item {margin-top:8px}
+.weight-item .weight-item-title {font-size:16px;color:#222;font-weight:300;width:120px}
+.weight-item .weight-item-input {width:calc(100% - 120px)}
+.weight-item .weight-item-input .input-b {width:100%;height:40px}
+.layer-btm {border-radius:0 0 18px 18px;overflow:hidden}
+.layer-btm .layer-btn-a {height:60px;background-color:#7d02e3;font-size:18px;color:#fff;width:100%;font-weight:500}
+
+	/* 비교분석 */
 .compare-analysis.open:before {opacity:1;z-index:100}
 .compare-analysis.open .compare-analysis-box {left:400px}
 .compare-analysis .compare-analysis-box {position:absolute;top:0;left:calc(-100% - 400px);width:calc(100% - 400px);bottom:0;background-color:#fff;z-index:101;min-width:1220px;-webkit-transition:left .3s ease-out;transition:left .3s ease-out}

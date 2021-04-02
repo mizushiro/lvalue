@@ -192,7 +192,7 @@
 		</div>
 		<div class="title-area">
 			<h3 class="title-c">세부지표별 지수</h3>
-			<button type="button" class="btn-type-a">전문가용</button>
+			<button type="button" class="btn-type-a" data-layer="weight-layer">전문가용</button>
 		</div>
 		<div class="box-detailed-index">
 			<!-- S : 교통환경 -->
@@ -2369,6 +2369,57 @@
 	</div>
 </div>
 <!-- E : 비교분석 -->
+<!-- S : 가중치설정 layer -->
+<div id="weight-layer" class="layer_section">
+	<div class="layer_section-container weight-content">
+		<div class="layer-content">
+			<hi class="weight-title">L.Value 가중치 설정</hi>
+			<div class="weight-list">
+				<div class="weight-item">
+					<p class="weight-item-title">교통환경</p>
+					<div class="weight-item-input">
+						<input type="text" class="input-b">
+					</div>
+				</div>
+				<div class="weight-item">
+					<p class="weight-item-title">교육환경</p>
+					<div class="weight-item-input">
+						<input type="text" class="input-b">
+					</div>
+				</div>
+				<div class="weight-item">
+					<p class="weight-item-title">생활편의</p>
+					<div class="weight-item-input">
+						<input type="text" class="input-b">
+					</div>
+				</div>
+				<div class="weight-item">
+					<p class="weight-item-title">자연공공</p>
+					<div class="weight-item-input">
+						<input type="text" class="input-b">
+					</div>
+				</div>
+				<div class="weight-item">
+					<p class="weight-item-title">도시분석</p>
+					<div class="weight-item-input">
+						<input type="text" class="input-b">
+					</div>
+				</div>
+				<div class="weight-item">
+					<p class="weight-item-title">주택(토지)환경</p>
+					<div class="weight-item-input">
+						<input type="text" class="input-b">
+					</div>
+				</div>
+			</div>
+			<div class="layer-btm">
+				<button type="button" class="layer-btn-a">적용</button>
+			</div>
+		</div>
+		<button type="button" class="btn_layer-close"><span class="for-a11y">레이어팝업 닫기</span></button>
+	</div>
+</div>
+<!-- E : 가중치설정 layer -->
 
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=udj14zm9sv"></script>
 <script type="text/javascript" src="/js/custom/chart/Chart.bundle.js"></script>
