@@ -368,6 +368,13 @@ html.scroll_off {overflow:hidden}
 .score-bar .score-value .score-point {font-size:14px;font-weight:500}
 .detailed-index {display:none;background-color:#f6f6f6;margin-top:-16px;padding:36px 20px 20px}
 .detailed-index .box-tab ~ .box-tab {margin-top:20px}
+.detailed-index .box-tab .list-tab {flex-wrap:wrap}
+.detailed-index .box-tab .list-tab .list-item-tab {min-width:calc(100% / 3)}
+.detailed-index .box-tab .list-tab .list-item-tab:nth-of-type(n+4) {border-top:1px solid #c7c7c7}
+.detailed-index .box-tab .list-tab .list-item-tab:nth-of-type(3n+1) {border-left:none}
+.detailed-index .box-tab .list-tab.type-b .list-item-tab:nth-of-type(n+4) {min-width:50%}
+.detailed-index .box-tab .list-tab.type-b .list-item-tab:nth-of-type(2n+4) {border-left:none}
+.detailed-index .box-tab .list-tab.type-b .list-item-tab:nth-of-type(2n+5) {border-left:1px solid #c7c7c7}
 .list-tab {display:flex;border:1px solid #c7c7c7;margin-bottom:12px}
 .list-tab .list-item-tab {flex:1}
 .list-tab .list-item-tab ~ .list-item-tab {border-left:1px solid #c7c7c7}
