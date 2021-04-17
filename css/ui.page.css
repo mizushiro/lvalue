@@ -263,7 +263,7 @@ html.scroll_off {overflow:hidden}
 /* title */
 .title-a {font-size:18px;color:#000;font-weight:300}
 .title-a i {vertical-align:middle;margin-right:8px;position:relative;top:-2px}
-.title-b {font-size:24px;color:#31196a;font-weight:200;text-align:center;word-break:keep-all;line-height:30px;padding:20px;font-family:'Noto Sans KR','sans-serif'}
+.title-b {font-size:24px;color:#31196a;font-weight:400;text-align:center;word-break:keep-all;line-height:30px;padding:20px;font-family:'Noto Sans KR','sans-serif'}
 .title-c {font-size:18px;color:#333;font-weight:300}
 .title-d {font-size:14px;color:#4e167b;font-weight:500}
 .title-e {font-size:14px;color:#7d02e3;font-weight:500;padding-left:10px;position:relative}
@@ -350,6 +350,8 @@ html.scroll_off {overflow:hidden}
 .box-structure-info .title-b {padding:20px 40px}
 .box-chart {border:1px solid #e2e2e2;border-radius:4px;overflow:hidden}
 .box-chart .chart-area {height:260px;display:flex;justify-content:center;align-items:center}
+.box-chart .chart-area.type-a {height:200px}
+.box-chart .chart-area.type-a img {max-height:100%}
 .box-chart .structure-score {background-color:#f6f6f6;height:40px;display:flex;justify-content:center;align-items:center}
 .box-chart .structure-score .structure-title {font-size:16px;color:#4e167c;margin-right:12px;letter-spacing:0;padding-top:4px}
 .box-chart .structure-score .value {color:#7809d4;font-size:24px;font-weight:600}
@@ -383,7 +385,7 @@ html.scroll_off {overflow:hidden}
 .list-tab .list-item-tab.is-selected + .list-item-tab {border-left-color:#fff}
 .detailed-index .detailed-item .detailed-info,
 .detailed-index .detailed-item .btn-detailed {display:flex;justify-content:space-between;width:100%;height:28px;align-items:center}
-.detailed-item .structure-name {font-size:14px;color:#222;width:80%}
+.detailed-item .structure-name {font-size:14px;color:#222;width:80%;text-align:left}
 .detailed-item .structure-street {font-size:14px;color:#7d02e3;font-weight:500;width:20%;text-align:right}
 .accordion-group.active .detailed-index {display:block}
 .detailed-index .title-e {margin-top:12px}
@@ -483,7 +485,7 @@ html.scroll_off {overflow:hidden}
 .layer-btm {border-radius:0 0 18px 18px;overflow:hidden}
 .layer-btm .layer-btn-a {height:60px;background-color:#7d02e3;font-size:18px;color:#fff;width:100%;font-weight:500}
 
-	/* 비교분석 */
+/* 비교분석 */
 .compare-analysis.open:before {opacity:1;z-index:100}
 .compare-analysis.open .compare-analysis-box {left:400px}
 .compare-analysis .compare-analysis-box {position:absolute;top:0;left:calc(-100% - 400px);width:calc(100% - 400px);bottom:0;background-color:#fff;z-index:101;min-width:1220px;-webkit-transition:left .3s ease-out;transition:left .3s ease-out}
@@ -552,3 +554,10 @@ html.scroll_off {overflow:hidden}
 .graph-item .graph-bar {width:calc(100% - 162px);height:3px;background-color:#ededed}
 .graph-item .graph-bar .bar-data {height:3px;vertical-align:top;display:inline-block;background-color:#a35deb}
 .graph-item ~ .graph-item {margin-top:12px}
+
+/* table custom */
+.dataTables_scrollBody::-webkit-scrollbar {width:6px}
+.dataTables_scrollBody::-webkit-scrollbar-track {background-color:transparent}
+.dataTables_scrollBody::-webkit-scrollbar-thumb {border-radius:30px;background-color:rgba(0,0,0,.1);border:none}
+.dataTables_scrollBody::-webkit-scrollbar-button {width:0;height:0}
+.dataTables_scrollBody .dataTable tr {height:24px}
