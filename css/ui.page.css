@@ -236,7 +236,7 @@ html.scroll_off {overflow:hidden}
 /* icon */
 [class^="marker-structure-"] {width:auto;height:58px;background-position:0 0;background-repeat:no-repeat;padding-left:46px;cursor:pointer;z-index:99}
 [class^="marker-structure-"] .structure-point {font-size:20px;color:#fff;font-weight:600;font-family:'Roboto','sans-serif';text-align:center;padding-right:16px}
-[class^="marker-structure-"] .structure-name {color:#fbcdff;font-size:11px;padding:2px 8px;margin-left:-45px}
+[class^="marker-structure-"] .structure-name {color:#fbcdff;font-size:11px;padding:2px 8px;margin-left:-45px;white-space:nowrap}
 [class^="marker-structure-"] [class^="icon-structure-"] {position:absolute;top:18px;left:10px}
 [class^="marker-structure-"] .layer-data {display:none;position:absolute;top:47px;left:10px;white-space:nowrap;color:#753b93;font-size:14px;height:32px;line-height:30px;border:1px solid #5b2676;background-color:#fff;padding:0 12px;border-radius:4px;font-weight:600}
 [class^="marker-structure-"] .layer-data:after {content:'';position:absolute;top:-5px;width:10px;height:6px;left:10px;background:url("/images/blt-arrow-b.png") no-repeat 50% 50%}
