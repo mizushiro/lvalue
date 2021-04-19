@@ -391,13 +391,13 @@ html.scroll_off {overflow:hidden}
 .detailed-index .title-e {margin-top:12px}
 .detailed-index .title-e + .txt-decs-a {margin-top:8px;padding-left:10px}
 .box-structure-info .box-chart  + .box-chart {margin-top:16px}
-.box-structure-info .size-choice {display:flex;align-items:center;height:32px;margin:32px 0 16px}
-.box-structure-info .size-choice .size-title {font-size:14px;font-weight:500;color:#4e167c;width:60px}
-.box-structure-info .size-choice .size-group {display:flex;width:calc(100% - 60px)}
-.box-structure-info .size-choice .btn-size-choice {flex:1;display:flex;height:32px;align-items:center;justify-content:center;padding:0 12px;font-size:14px;color:#7d02e3;border:1px solid #7d02e3;border-radius:4px;font-weight:500}
-.box-structure-info .size-choice .btn-size-choice:hover {background-color:#f1edf9}
-.box-structure-info .size-choice .btn-size-choice.active {background-color:#7d02e3;color:#fff}
-.box-structure-info .size-choice .btn-size-choice ~ .btn-size-choice {margin-left:8px}
+.size-choice {display:flex;align-items:center;height:32px;margin:32px 0 16px}
+.size-choice .size-title {font-size:14px;font-weight:500;color:#4e167c;width:60px}
+.size-choice .size-group {display:flex;width:calc(100% - 60px)}
+.size-choice .btn-size-choice {flex:1;display:flex;height:32px;align-items:center;justify-content:center;padding:0 12px;font-size:14px;color:#7d02e3;border:1px solid #7d02e3;border-radius:4px;font-weight:500}
+.size-choice .btn-size-choice:hover {background-color:#f1edf9}
+.size-choice .btn-size-choice.active {background-color:#7d02e3;color:#fff}
+.size-choice .btn-size-choice ~ .btn-size-choice {margin-left:8px}
 
 /* btn */
 .btn-layer-close {width:32px;height:32px;background:url("/images/btn-close.png") no-repeat 50% 50%}
@@ -533,6 +533,8 @@ html.scroll_off {overflow:hidden}
 .analysis-item .map-area-b {height:380px;border:1px solid #e2e2e2;border-radius:4px;overflow:hidden}
 .analysis-item .map-area-b ~ .box-tab-b {margin-top:24px}
 .analysis-item .content-a {margin-top:24px}
+.analysis-item .size-choice {margin:16px 0 32px}
+.analysis-item .size-choice .size-title {width:180px}
 
 .list-tab-b {display:flex;border-bottom:1px solid #c7c7c7;margin-bottom:12px}
 .list-tab-b .list-item-tab-b {flex:1}
