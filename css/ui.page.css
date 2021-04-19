@@ -533,7 +533,7 @@ html.scroll_off {overflow:hidden}
 .analysis-item .map-area-b {height:380px;border:1px solid #e2e2e2;border-radius:4px;overflow:hidden}
 .analysis-item .map-area-b ~ .box-tab-b {margin-top:24px}
 .analysis-item .content-a {margin-top:24px}
-.analysis-item .size-choice {margin:16px 0 32px}
+.analysis-item .size-choice {margin:0 0 16px}
 .analysis-item .size-choice .size-title {width:180px}
 
 .list-tab-b {display:flex;border-bottom:1px solid #c7c7c7;margin-bottom:12px}
