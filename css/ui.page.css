@@ -535,6 +535,7 @@ html.scroll_off {overflow:hidden}
 .analysis-item .content-a {margin-top:24px}
 .analysis-item .size-choice {margin:0 0 16px}
 .analysis-item .size-choice .size-title {width:180px}
+.analysis-item .box-chart ~ .size-choice {margin:16px 0}
 
 .list-tab-b {display:flex;border-bottom:1px solid #c7c7c7;margin-bottom:12px}
 .list-tab-b .list-item-tab-b {flex:1}
