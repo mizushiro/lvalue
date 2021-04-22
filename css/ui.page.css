@@ -246,6 +246,7 @@ html.scroll_off {overflow:hidden}
 .marker-structure-a:after {content:'';position:absolute;top:0;right:-4px;background:url("/images/map-item-bg.png") 100% 0;width:4px;height:100%}
 .marker-structure-a.select:after{background-image:url("/images/map-item-bg-on.png")}
 [class^="marker-structure-"]:hover {z-index:100}
+[class^="marker-structure-"].mini {transform:scale(0.7);-webkot-transform:scale(0.7)}
 [class^="icon-structure-"] {display:inline-block;width:28px;height:28px}
 .icon-structure-a {background:url("/images/icon-structure-a.png") no-repeat 50% 50%}
 .icon-structure-b {background:url("/images/icon-structure-b.png") no-repeat 50% 50%}
