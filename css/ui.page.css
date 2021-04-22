@@ -569,7 +569,12 @@ html.scroll_off {overflow:hidden}
 .dataTables_scrollBody::-webkit-scrollbar-track {background-color:transparent}
 .dataTables_scrollBody::-webkit-scrollbar-thumb {border-radius:30px;background-color:rgba(0,0,0,.1);border:none}
 .dataTables_scrollBody::-webkit-scrollbar-button {width:0;height:0}
+.dataTables_scrollBody .dataTable {table-layout:fixed}
 .dataTables_scrollBody .dataTable tr {height:24px}
+.dataTables_scrollBody .dataTable thead {display:none}
+.dataTables_scrollBody .dataTable thead tr th:first-child,
+.dataTables_scrollBody .dataTable tbody tr td:first-child {width:75%}
+.dataTables_scrollBody .dataTable tbody tr td.td-right {width:25%}
 
 /* 지도팝업 */
 .layer_section .layer_section-container.map-content {width:800px}
