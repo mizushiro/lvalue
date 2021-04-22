@@ -516,6 +516,9 @@ html.scroll_off {overflow:hidden}
 
 .analysis-box {display:flex}
 .analysis-box .analysis-item {width:calc(50% - 20px)}
+.analysis-box .analysis-item .sub-title-area {margin-top:20px}
+.analysis-box .analysis-item .sub-title-area .btn-help {top:-1px}
+.analysis-box .analysis-item .score-bar {margin:32px 0 20px}
 .analysis-box .analysis-item ~ .analysis-item {margin-left:40px;padding-right:4px}
 .analysis-item .analysis-summary {display:flex;align-items:center}
 .analysis-item .analysis-summary .box-chart {width:350px}
@@ -564,3 +567,8 @@ html.scroll_off {overflow:hidden}
 .dataTables_scrollBody::-webkit-scrollbar-thumb {border-radius:30px;background-color:rgba(0,0,0,.1);border:none}
 .dataTables_scrollBody::-webkit-scrollbar-button {width:0;height:0}
 .dataTables_scrollBody .dataTable tr {height:24px}
+
+/* 지도팝업 */
+.layer_section .layer_section-container.map-content {width:800px}
+.map-title {text-align:center;font-size:24px;height:68px;display:flex;justify-content:center;align-items:center;border-bottom:1px solid #e2e2e2;color:#31196a}
+.map-layer-area {height:600px}

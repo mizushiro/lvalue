@@ -97,7 +97,7 @@
 		<button type="button" class="btn-compare">비교분석 자세히 보기</button>
 	</section>
 	<section class="section-c">
-		<a href="" class="link-type-a">회사소개</a>
+		<a href="#map-layer" class="link-type-a" data-layer="map-layer">회사소개</a>
 		<a href="#login-layer" class="link-type-a"  data-layer="login-layer">로그인</a>
 	</section>
 </div>
@@ -1366,6 +1366,12 @@
 								<div class="map-area-b">
 									지도영역
 								</div>
+								<div class="sub-title-area">
+									<h3 class="title-d">T. 교통환경<button type="button" class="btn-help slide-1" data-layer="info-layer"></button></h3>
+								</div>
+								<div class="score-bar">
+									<div class="score-bar-value" style="width:78%"><span class="score-value"><span class="score-point">78</span>%</span></div>
+								</div>
 								<div class="box-tab-b">
 									<ul class="list-tab-b">
 										<li class="list-item-tab-b"><button type="button" class="list-item-btn-b" name="#compareT1-1">지하철(2)</button></li>
@@ -1425,6 +1431,12 @@
 							<div class="analysis-item">
 								<div class="map-area-b">
 									지도영역
+								</div>
+								<div class="sub-title-area">
+									<h3 class="title-d">T. 교통환경<button type="button" class="btn-help slide-1" data-layer="info-layer"></button></h3>
+								</div>
+								<div class="score-bar">
+									<div class="score-bar-value" style="width:78%"><span class="score-value"><span class="score-point">78</span>%</span></div>
 								</div>
 								<div class="box-tab-b">
 									<ul class="list-tab-b">
@@ -2422,6 +2434,20 @@
 	</div>
 </div>
 <!-- E : 가중치설정 layer -->
+
+<!-- S : map layer -->
+<div id="map-layer" class="layer_section">
+	<div class="layer_section-container map-content">
+		<div class="layer-content">
+			<hi class="map-title">상도SH아파트</hi>
+			<div class="map-layer-area">
+				지도영역
+			</div>
+		</div>
+		<button type="button" class="btn_layer-close"><span class="for-a11y">레이어팝업 닫기</span></button>
+	</div>
+</div>
+<!-- E : map layer -->
 
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=udj14zm9sv"></script>
 <script type="text/javascript" src="/js/custom/chart/Chart.bundle.js"></script>
