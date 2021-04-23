@@ -580,3 +580,9 @@ html.scroll_off {overflow:hidden}
 .layer_section .layer_section-container.map-content {width:800px}
 .map-title {text-align:center;font-size:24px;height:68px;display:flex;justify-content:center;align-items:center;border-bottom:1px solid #e2e2e2;color:#31196a}
 .map-layer-area {height:600px}
+
+/* PDF Download */
+.layer_section .layer_section-container.pdf-content {width:1400px;position:relative}
+.layer_section .layer_section-container.pdf-content:before {content:'';position:absolute;top:68px;bottom:0;left:calc(50% - 4px);border-left:1px dashed #e2e2e2}
+.layer_section .layer_section-container.pdf-content .compare-result {padding:0 20px 20px;margin-right:0;position:relative}
+.pdf-title {text-align:center;font-size:24px;height:68px;display:flex;justify-content:center;align-items:center;border-bottom:1px solid #e2e2e2;color:#31196a}
