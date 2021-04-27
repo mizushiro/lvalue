@@ -587,7 +587,7 @@ html.scroll_off {overflow:hidden}
 .layer_section .layer_section-container.pdf-content:before {content:'';position:absolute;top:68px;bottom:0;left:calc(50% - 4px);border-left:1px dashed #e2e2e2}
 .layer_section .layer_section-container.pdf-content .compare-result {padding:0 20px 20px;margin-right:0;position:relative}
 .pdf-title {text-align:center;font-size:24px;height:68px;display:flex;justify-content:center;align-items:center;border-bottom:1px solid #e2e2e2;color:#31196a}
-.layer_section .layer_section-container.pdf-content .analysis-box ~ .analysis-box {margin-top:30px}
+.layer_section .layer_section-container.pdf-content .print-section ~ .print-section {margin-top:30px}
 
 .pdf-content-box {display:flex;flex-wrap:wrap}
 .pdf-content-box .pdf-content-item {width:calc((100% - 40px) / 3);margin-right:20px;padding-top:12px}
