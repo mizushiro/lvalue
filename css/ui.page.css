@@ -578,15 +578,15 @@ html.scroll_off {overflow:hidden}
 .dataTables_scrollBody .dataTable tbody tr td:first-child {width:75%}
 .dataTables_scrollBody .dataTable tbody tr td.td-right {width:25%}
 
-.dataTables_scrollHead .dataTable {table-layout:fixed;border:1px solid #7d02e3;margin-top:12px;background-color:#7d02e3}
-.dataTables_scrollHead .dataTable thead th {text-align:center;padding:0 6px;height:30px;background-color:#7d02e3;font-weight:500;color:#fff}
-.dataTables_scrollBody.custom-a .dataTable {table-layout:fixed;border-left:1px solid #e2e2e2;border-top:1px solid #e2e2e2}
-.dataTables_scrollBody.custom-a .dataTable tr {height:30px}
-.dataTables_scrollBody.custom-a .dataTable td {border-right:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;text-align:center;padding:0 6px}
-.dataTables_scrollBody.custom-a .dataTable td.td-right {text-align:right}
-.dataTables_scrollBody.custom-a .dataTable thead tr th:first-child,
-.dataTables_scrollBody.custom-a .dataTable tbody tr td:first-child {width:calc(100% / 3)}
-.dataTables_scrollBody.custom-a .dataTable tbody tr td.td-right {width:calc(100% / 3)}
+.box-chart .dataTables_scrollHead .dataTable {table-layout:fixed;border:1px solid #7d02e3;margin-top:12px;background-color:#7d02e3}
+.box-chart .dataTables_scrollHead .dataTable thead th {text-align:center;padding:0 6px;height:30px;background-color:#7d02e3;font-weight:500;color:#fff}
+.box-chart .dataTables_scrollBody.custom-a .dataTable {table-layout:fixed;border-left:1px solid #e2e2e2;border-top:1px solid #e2e2e2}
+.box-chart .dataTables_scrollBody.custom-a .dataTable tr {height:30px}
+.box-chart .dataTables_scrollBody.custom-a .dataTable td {border-right:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;text-align:center;padding:0 6px}
+.box-chart .dataTables_scrollBody.custom-a .dataTable td.td-right {text-align:right}
+.box-chart .dataTables_scrollBody.custom-a .dataTable thead tr th:first-child,
+.box-chart .dataTables_scrollBody.custom-a .dataTable tbody tr td:first-child {width:calc(100% / 3)}
+.box-chart .dataTables_scrollBody.custom-a .dataTable tbody tr td.td-right {width:calc(100% / 3)}
 
 /* 지도팝업 */
 .layer_section .layer_section-container.map-content {width:800px}
