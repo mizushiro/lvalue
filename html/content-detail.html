@@ -597,7 +597,7 @@
 					<button type="button" class="btn-accordion"><span class="for-a11y">열기</span></button>
 				</div>
 				<div class="score-bar">
-					<div class="score-bar-value" style="width:67%"><span class="score-value"><span class="score-point">67</span>%</span></div>
+					<div class="score-bar-value" style="width:0%"><span class="score-value"><span class="score-point">0</span>%</span></div>
 				</div>
 				<div class="detailed-index">
 					<!-- S : 토지일 경우 -->
@@ -732,7 +732,7 @@
 		<div class="size-choice">
 			<p class="size-title">면적(㎡)</p>
 			<div class="size-group">
-				<button type="button" class="btn-size-choice active">106</button>
+				<button type="button" class="btn-size-choice active">106<span class="small">(65㎡ 이하)</span></button>
 				<button type="button" class="btn-size-choice">121</button>
 				<button type="button" class="btn-size-choice">124</button>
 				<button type="button" class="btn-size-choice">164</button>
@@ -742,6 +742,75 @@
 			<div class="chart-area"><img src="/images/temp/@sample.png" alt=""></div>
 			<div class="structure-score">
 				<span class="structure-title">실거래가</span>
+			</div>
+		</div>
+		<div class="dataTables_scroll">
+			<div class="dataTables_scrollHead" style="overflow: hidden; position: relative; border:0; width: 100%;">
+				<div class="dataTables_scrollHeadInner" style="box-sizing: content-box; width: 346px; padding-right: 17px;">
+					<table class="dataTable no-footer" role="grid" style="margin-left:0; width: 346px;">
+						<thead>
+						<tr role="row">
+							<th class="sorting_asc" tabindex="0" aria-controls="price-table" rowspan="1" colspan="1" style="width:0;" aria-sort="ascending" aria-label="거래일자: activate to sort column descending">거래일자</th>
+							<th class="sorting" tabindex="0" aria-controls="price-table" rowspan="1" colspan="1" style="width:0;" aria-label="거래금액 (원): activate to sort column ascending">거래금액 (원)</th>
+							<th class="sorting" tabindex="0" aria-controls="price-table" rowspan="1" colspan="1" style="width:0;" aria-label="면적 (㎡): activate to sort column ascending">면적 (㎡)</th>
+						</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+			<div class="dataTables_scrollBody custom-a" style="position: relative; overflow: auto; max-height: 120px; width: 100%;">
+				<table id="price-table" class="dataTable no-footer" role="grid" style="width: 100%;">
+					<thead>
+					<tr role="row" style="height:0;">
+						<th class="sorting" aria-controls="price-table" rowspan="1" colspan="1" style="width:0; padding-top:0; padding-bottom:0; border-top-width:0; border-bottom-width:0; height:0;">
+							<div class="dataTables_sizing" style="height:0; overflow: hidden;">거래일자</div>
+						</th>
+						<th class="sorting" aria-controls="price-table" rowspan="1" colspan="1" style="width:0; padding-top:0; padding-bottom:0; border-top-width:0; border-bottom-width:0; height:0;">
+							<div class="dataTables_sizing" style="height:0; overflow: hidden;">거래금액 (원)</div>
+						</th>
+						<th class="sorting" aria-controls="price-table" rowspan="1" colspan="1" style="width:0; padding-top:0; padding-bottom:0; border-top-width:0; border-bottom-width:0; height:0;">
+							<div class="dataTables_sizing" style="height:0; overflow: hidden;">면적 (㎡)</div>
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr class="odd">
+						<td class="sorting_1"><span class="structure-name">2016.12.15</span></td>
+						<td class="td-right"><span class="structure-name">335,000,000</span></td>
+						<td class="td-right"><span class="structure-name">69.12</span></td>
+					</tr>
+					<tr class="even">
+						<td class="sorting_1"><span class="structure-name">2016.12.15</span></td>
+						<td class="td-right"><span class="structure-name">355,000,000</span></td>
+						<td class="td-right"><span class="structure-name">82.83</span></td>
+					</tr>
+					<tr class="odd">
+						<td class="sorting_1"><span class="structure-name">2017.08.10</span></td>
+						<td class="td-right"><span class="structure-name">328,000,000</span></td>
+						<td class="td-right"><span class="structure-name">84.87</span></td>
+					</tr>
+					<tr class="even">
+						<td class="sorting_1"><span class="structure-name">2017.09.27</span></td>
+						<td class="td-right"><span class="structure-name">370,000,000</span></td>
+						<td class="td-right"><span class="structure-name">84.87</span></td>
+					</tr>
+					<tr class="odd">
+						<td class="sorting_1"><span class="structure-name">2019.09.26</span></td>
+						<td class="td-right"><span class="structure-name">392,000,000</span></td>
+						<td class="td-right"><span class="structure-name">70.01</span></td>
+					</tr>
+					<tr class="even">
+						<td class="sorting_1"><span class="structure-name">2020.02.10</span></td>
+						<td class="td-right"><span class="structure-name">490,000,000</span></td>
+						<td class="td-right"><span class="structure-name">82.83</span></td>
+					</tr>
+					<tr class="odd">
+						<td class="sorting_1"><span class="structure-name">2020.02.19</span></td>
+						<td class="td-right"><span class="structure-name">470,000,000</span></td>
+						<td class="td-right"><span class="structure-name">84.87</span></td>
+					</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 		<!--<div class="box-chart">
@@ -1310,7 +1379,7 @@
 								<div class="size-choice">
 									<p class="size-title">면적(㎡)</p>
 									<div class="size-group">
-										<button type="button" class="btn-size-choice active">106</button>
+										<button type="button" class="btn-size-choice active">106<span class="small">(65㎡ 이하)</span></button>
 										<button type="button" class="btn-size-choice">121</button>
 										<button type="button" class="btn-size-choice">124</button>
 										<button type="button" class="btn-size-choice">164</button>
@@ -1335,7 +1404,7 @@
 								<div class="size-choice">
 									<p class="size-title">면적(㎡)</p>
 									<div class="size-group">
-										<button type="button" class="btn-size-choice active">106</button>
+										<button type="button" class="btn-size-choice active">106<span class="small">(65㎡ 이하)</span></button>
 										<button type="button" class="btn-size-choice">121</button>
 										<button type="button" class="btn-size-choice">124</button>
 										<button type="button" class="btn-size-choice">164</button>
@@ -2736,7 +2805,7 @@
 						<div class="size-choice">
 							<p class="size-title">면적(㎡)</p>
 							<div class="size-group">
-								<button type="button" class="btn-size-choice active">106</button>
+								<button type="button" class="btn-size-choice active">106<span class="small">(65㎡ 이하)</span></button>
 								<button type="button" class="btn-size-choice">121</button>
 								<button type="button" class="btn-size-choice">124</button>
 								<button type="button" class="btn-size-choice">164</button>
@@ -2755,7 +2824,7 @@
 						<div class="size-choice">
 							<p class="size-title">면적(㎡)</p>
 							<div class="size-group">
-								<button type="button" class="btn-size-choice active">106</button>
+								<button type="button" class="btn-size-choice active">106<span class="small">(65㎡ 이하)</span></button>
 								<button type="button" class="btn-size-choice">121</button>
 								<button type="button" class="btn-size-choice">124</button>
 								<button type="button" class="btn-size-choice">164</button>
