@@ -594,9 +594,11 @@ html.scroll_off {overflow:hidden}
 .map-layer-area {height:600px}
 
 /* PDF Download */
-.layer_section .layer_section-container.pdf-content {width:1400px;position:relative}
+#pdf-layer.layer_section {height:100%}
+#pdf-layer.layer_section .layer_section-container {border-radius:0}
+.layer_section .layer_section-container.pdf-content {width:100%;position:relative;top:0;left:0;transform:translate(0, 0);height:100%;overflow-y:auto}
 .layer_section .layer_section-container.pdf-content:before {content:'';position:absolute;top:68px;bottom:0;left:calc(50% - 4px);border-left:1px dashed #e2e2e2}
-.layer_section .layer_section-container.pdf-content .compare-result {padding:0 20px 20px;margin-right:0;position:relative}
+.layer_section .layer_section-container.pdf-content .compare-result {padding:0 20px 20px;margin-right:0;position:relative;height:auto;overflow:visible}
 .pdf-title {text-align:center;font-size:24px;height:68px;display:flex;justify-content:center;align-items:center;border-bottom:1px solid #e2e2e2;color:#31196a}
 .layer_section .layer_section-container.pdf-content .print-section ~ .print-section {margin-top:30px}
 
