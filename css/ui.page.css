@@ -609,6 +609,40 @@ html.scroll_off {overflow:hidden}
 .pdf-content-item .detailed-item .structure-street,
 .pdf-content-item .detailed-item .structure-name {font-size:13px}
 
+/* about */
+.about-area {background:url("/images/about.jpg") no-repeat 50% 0;min-width:1280px;padding-bottom:100px}
+.about-area .about-txt-a {font-size:18px;font-weight:400;color:#282828;line-height:30px;margin-top:20px}
+.about-area .about-txt-b {font-size:14px;font-weight:400;color:#555;line-height:24px;margin-top:12px;letter-spacing:0;word-break:keep-all}
+.about-area .about-txt-c {color:#5c0e81;font-size:18px;font-weight:600;margin-bottom:20px}
+.about-area .about-txt-d {color:#5c0e81;font-size:16px;line-height:30px;font-weight:400;padding-left:16px;text-indent:-16px}
+.about-area .ta-c {text-align:right}
+.about-area .about-point {color:#000;font-weight:600}
+.about-content {max-width:1280px;margin:0 auto;padding-top:50px}
+.about-header {display:flex;justify-content:space-between}
+.about-header .logo-title {height:50px;display:flex;align-items:center}
+.about-header .link-logo {display:block;width:116px;height:25px;background:url("/images/logo.png") no-repeat 0 0}
+.about-header .top-menu .link-type-a {font-size:14px;color:#282828;display:inline-block;margin-left:30px}
+.about-info-a {margin-top:340px;display:flex;min-height:280px}
+.about-info-a .item-a {width:25%;padding-left:30px}
+.about-info-a .about-title-a {font-size:18px;color:#5c0e81;font-weight:600;display:flex;align-items:center}
+.about-info-a .about-title-a [class^="about-icon"] {margin-right:8px}
+.about-area [class^="about-icon"] {width:36px;height:36px;display:inline-block;background-repeat:no-repeat;background-position:50% 50%}
+.about-area .about-icon1 {background-image:url("/images/about-icon1.png")}
+.about-area .about-icon2 {background-image:url("/images/about-icon2.png")}
+.about-area .about-icon3 {background-image:url("/images/about-icon3.png")}
+.about-area .about-icon4 {background-image:url("/images/about-icon4.png")}
+.about-info-b {margin-top:120px;display:flex;justify-content:space-between}
+.about-info-b .about-logo {width:612px;text-align:center}
+.about-info-b .about-txt {width:calc(100% - 612px)}
+.about-info-b .about-txt .about-txt-b {margin-top:0;font-weight:500}
+.about-info-b .about-txt .about-txt-b ~ .about-txt-b {margin-top:24px}
+.about-info-c {margin-top:120px;border:1px solid #cc94e7;display:flex;justify-content:space-between}
+.about-info-c .about-col-a {width:calc(100% - 410px);padding:40px 44px}
+.about-info-c .about-col-b {width:410px;background-color:#5c0e81;display:flex;align-items:center;justify-content:center}
+.about-info-c .info-a-tit {font-size:18px;line-height:30px;color:#fff;font-weight:500}
+.about-info-c .info-a-tit ~ .info-a-tit {margin-top:16px}
+.about-info-c .info-a-txt {font-size:18px;line-height:30px;color:#ddd;font-weight:300}
+
 @page {
 	size:210mm 297mm; /*A4*/
 	margin:0
